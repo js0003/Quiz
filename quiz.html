@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>General Knowledge Quiz</title>
+    <link rel="stylesheet" href="styles/general-knowledge-quiz.css">
+  </head>
+  
+  <body>
+    <div class="container">
+      <div id="question-container" class="hide">
+        <div id="question" class="js-questions">
+          <p class="js-question"></p>
+        </div>
+        <div id="answer-buttons" class="btn-grid">
+          <button id='answer1' class="btn" onclick="checkCorrectAnswer(1);">Answer 1</button>
+          <button id='answer2' class="btn" onclick="checkCorrectAnswer(2);">Answer 2</button>
+          <button id='answer3' class="btn" onclick="checkCorrectAnswer(3);">Answer 3</button>
+          <button id='answer4' class="btn" onclick="checkCorrectAnswer(4);">Answer 4</button>
+        </div>
+      </div>
+      <div class="controls">
+        <button id="start-btn" class="start-btn btn" onclick="
+          beginGame();
+          ">Test your general knowledge now!</button>
+        <button id="next-btn" class="next-btn btn hide" onclick="
+          
+        ">Next</button>
+        <p id='score-btn'class="hide score-btn">Score:</p>
+      </div>
+    </div>
+      <div class="score">
+        <span id="right-answers"></span>
+    </div>
+    <script src="scripts/general-knowledge-quiz.js"></script>
+
+  </body>
+
+</html>
